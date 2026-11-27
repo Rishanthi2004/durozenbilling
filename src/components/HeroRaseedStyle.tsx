@@ -17,26 +17,6 @@ const ROTATING_TECHNOLOGIES = [
   "Automated Retail Operations",
 ];
 
-const HEADLINE_PREFIX_WORDS = [
-  "Power",
-  "Your",
-  "Business",
-  "with",
-];
-
-const DESCRIPTION_WORDS = [
-  "One",
-  "Powerful",
-  "Platform",
-  "for",
-  "Billing,",
-  "Inventory,",
-  "Sales,",
-  "and",
-  "Business",
-  "Operations.",
-];
-
 const CLIENT_BRANDS = [
   { name: "Craftsman Architects", label: "CRAFTSMAN" },
   { name: "Sree Amman Traders", label: "AMMAN TRADERS" },
@@ -79,30 +59,6 @@ export default function HeroRaseedStyle() {
 
     return () => clearTimeout(timer);
   }, [displayText, isDeleting, sectorIndex]);
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.08,
-        delayChildren: 0.1,
-      },
-    },
-  };
-
-  const wordVariants = {
-    hidden: { opacity: 0, y: 22, filter: "blur(8px)" },
-    visible: {
-      opacity: 1,
-      y: 0,
-      filter: "blur(0px)",
-      transition: {
-        duration: 0.55,
-        ease: [0.16, 1, 0.3, 1],
-      },
-    },
-  };
 
   return (
     <>
@@ -157,70 +113,26 @@ export default function HeroRaseedStyle() {
             <span>Transform the Way You Grow</span>
           </div>
 
-          {/* Animated Headline with Word-by-Word Reveal & Dynamic Moving Typewriter (Screenshot 5) */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="max-w-4xl mx-auto"
-          >
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.16]">
-              <span className="flex flex-wrap justify-center items-center gap-x-2.5 sm:gap-x-3.5 gap-y-1">
-                {HEADLINE_PREFIX_WORDS.map((w, idx) => (
-                  <motion.span
-                    key={idx}
-                    variants={wordVariants}
-                    className="inline-block transition-transform hover:scale-105 duration-200 cursor-default text-slate-900"
-                  >
-                    {w}
-                  </motion.span>
-                ))}
+          {/* Headline with Dynamic Typewriter Cursor */}
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.16]">
+              <span>Power Your Business with </span>
+              <span className="text-durozen-600 font-black inline-block mt-2 sm:mt-0 relative">
+                {displayText}
+                <span className="inline-block w-1 sm:w-1.5 h-7 sm:h-11 lg:h-12 bg-durozen-600 ml-1.5 align-middle rounded-full animate-pulse" />
               </span>
-
-              {/* Dynamic Rotating Word with Blinking Cursor */}
-              <motion.span
-                variants={wordVariants}
-                className="inline-block mt-2 sm:mt-3 relative"
-              >
-                <span className="relative inline-block text-durozen-600 font-black min-h-[1.25em]">
-                  {displayText}
-                  <motion.span
-                    animate={{ opacity: [1, 0, 1] }}
-                    transition={{ duration: 0.75, repeat: Infinity, ease: "easeInOut" }}
-                    className="inline-block w-1 sm:w-1.5 h-7 sm:h-11 lg:h-12 bg-durozen-600 ml-1.5 align-middle rounded-full"
-                  />
-                </span>
-              </motion.span>
             </h1>
-          </motion.div>
+          </div>
 
-          {/* Subtitle Words Revealed One by One */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="mt-6 max-w-2xl mx-auto"
-          >
-            <p className="text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed flex flex-wrap justify-center items-center gap-x-1.5 gap-y-0.5">
-              {DESCRIPTION_WORDS.map((word, idx) => (
-                <motion.span
-                  key={idx}
-                  variants={wordVariants}
-                  className="inline-block transition-colors hover:text-durozen-600 text-slate-600"
-                >
-                  {word}
-                </motion.span>
-              ))}
+          {/* Subtitle */}
+          <div className="mt-5 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+              One Powerful Platform for Billing, Inventory, Sales, and Business Operations.
             </p>
-          </motion.div>
+          </div>
 
           {/* CTA & Rating Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.85, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
-          >
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
             <button
               type="button"
               onClick={() => setIsDemoModalOpen(true)}
@@ -236,7 +148,7 @@ export default function HeroRaseedStyle() {
               </div>
               <span className="font-semibold text-slate-700">From 10+ Clients &amp; 35+ Projects</span>
             </div>
-          </motion.div>
+          </div>
 
           {/* ========================================================= */}
           {/* MULTI-DEVICE SOFTWARE SHOWCASE (SCREENSHOT 7)            */}

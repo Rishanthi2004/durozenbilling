@@ -52,7 +52,7 @@ export default function IndustriesPage() {
         </section>
 
         {/* Detailed Industry Solutions */}
-        <section className="py-16 sm:py-24 bg-white/40 backdrop-blur-xs">
+        <section className="py-16 sm:py-24 bg-slate-50/70">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             {INDUSTRIES.map((ind) => (
               <div

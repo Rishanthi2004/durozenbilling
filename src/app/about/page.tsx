@@ -129,7 +129,7 @@ export default function AboutPage() {
         </section>
 
         {/* Company Strengths Numbers (5 Colored Cards matching screenshot) */}
-        <section className="py-12 sm:py-16 bg-white/40 backdrop-blur-xs border-b border-slate-200/60">
+        <section className="py-12 sm:py-16 bg-slate-50/70 border-b border-slate-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
               {ABOUT_STATS.map((stat) => (
@@ -229,7 +229,7 @@ export default function AboutPage() {
         </section>
 
         {/* Global Reach */}
-        <section className="py-16 sm:py-24 bg-white/40 backdrop-blur-xs border-t border-slate-200/60">
+        <section className="py-16 sm:py-24 bg-slate-50/70 border-t border-slate-200/80">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span className="text-xs font-bold uppercase tracking-wider text-durozen-600">
               International Presence

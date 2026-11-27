@@ -36,7 +36,7 @@ export default function ProductsCatalogPage() {
         </section>
 
         {/* Product Catalog Grid */}
-        <section className="py-16 sm:py-24 bg-white/40 backdrop-blur-xs">
+        <section className="py-16 sm:py-24 bg-slate-50/70">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
             {DUROZEN_PRODUCTS.map((prod) => (
               <ProductCard key={prod.id} product={prod} featured={true} />

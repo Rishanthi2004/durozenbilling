@@ -54,7 +54,7 @@ export default function RootLayout({
       >
         {/* Fixed Ambient Design Background Pattern */}
         <div
-          className="fixed inset-0 pointer-events-none -z-10 bg-cover bg-center bg-no-repeat bg-fixed opacity-95"
+          className="fixed inset-0 pointer-events-none -z-10 bg-cover bg-center bg-no-repeat bg-fixed opacity-40"
           style={{ backgroundImage: "url('/background-design.jpg')" }}
           aria-hidden="true"
         />

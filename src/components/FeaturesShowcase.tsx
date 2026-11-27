@@ -33,7 +33,7 @@ export default function FeaturesShowcase() {
     flagship.features.find((f) => f.id === selectedFeatureId) || flagship.features[0];
 
   return (
-    <section className="py-20 sm:py-28 bg-white/40 backdrop-blur-xs border-y border-slate-200/60 relative overflow-hidden">
+    <section className="py-20 sm:py-28 bg-slate-50/70 border-y border-slate-200/80 relative overflow-hidden">
       {/* Background soft grid */}
       <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none" />
 

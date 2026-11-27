@@ -466,7 +466,7 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
         {/* ========================================================= */}
         {/* 3. STEP-BY-STEP WORKFLOW DEMONSTRATION                    */}
         {/* ========================================================= */}
-        <section className="py-20 sm:py-28 bg-white/40 backdrop-blur-xs border-y border-slate-200/60 relative">
+        <section className="py-20 sm:py-28 bg-slate-50/70 border-y border-slate-200/80 relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-durozen-50 border border-durozen-200/80 text-durozen-700 text-xs font-bold mb-3">
@@ -716,7 +716,7 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
         {/* ========================================================= */}
         {/* 8. REQUEST A DEMO CTA                                     */}
         {/* ========================================================= */}
-        <section className="py-20 bg-white/40 backdrop-blur-xs border-t border-slate-200/60">
+        <section className="py-20 bg-slate-50/70 border-t border-slate-200/80">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl">
               <div className="text-center max-w-xl mx-auto mb-8">
