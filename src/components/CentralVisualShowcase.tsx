@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function CentralVisualShowcase() {
   return (
-    <section className="py-20 sm:py-28 bg-slate-50/70 border-y border-slate-200/80 relative overflow-hidden">
+    <section className="py-20 sm:py-28 bg-white/40 backdrop-blur-xs border-y border-slate-200/60 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {/* Badge (Screenshot 4) */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-durozen-50 border border-durozen-200/80 text-durozen-700 text-xs font-bold mb-4 shadow-xs">

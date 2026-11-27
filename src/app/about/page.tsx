@@ -110,12 +110,12 @@ function AboutStatCard({ stat }: { stat: AboutStatItem }) {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white flex flex-col selection:bg-durozen-500 selection:text-white">
+    <div className="min-h-screen bg-transparent flex flex-col selection:bg-durozen-500 selection:text-white">
       <Navbar />
 
       <main className="flex-grow">
         {/* Hero */}
-        <section className="py-16 sm:py-24 bg-gradient-to-b from-durozen-50/40 via-white to-white border-b border-slate-100 text-center">
+        <section className="py-16 sm:py-24 bg-white/30 backdrop-blur-xs border-b border-slate-200/60 text-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-durozen-50 border border-durozen-200/80 text-durozen-700 text-xs font-bold mb-4 shadow-2xs">
               <Award className="w-3.5 h-3.5 text-durozen-500" />
@@ -129,7 +129,7 @@ export default function AboutPage() {
         </section>
 
         {/* Company Strengths Numbers (5 Colored Cards matching screenshot) */}
-        <section className="py-12 sm:py-16 bg-slate-50/60 border-b border-slate-100">
+        <section className="py-12 sm:py-16 bg-white/40 backdrop-blur-xs border-b border-slate-200/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
               {ABOUT_STATS.map((stat) => (
@@ -140,7 +140,7 @@ export default function AboutPage() {
         </section>
 
         {/* Our Mission & Engineering Culture */}
-        <section className="py-16 sm:py-24 bg-white">
+        <section className="py-16 sm:py-24 bg-transparent">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
@@ -229,7 +229,7 @@ export default function AboutPage() {
         </section>
 
         {/* Global Reach */}
-        <section className="py-16 sm:py-24 bg-slate-50/50 border-t border-slate-100">
+        <section className="py-16 sm:py-24 bg-white/40 backdrop-blur-xs border-t border-slate-200/60">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span className="text-xs font-bold uppercase tracking-wider text-durozen-600">
               International Presence

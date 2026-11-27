@@ -25,12 +25,12 @@ export default function BookDemoPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white flex flex-col selection:bg-durozen-500 selection:text-white">
+    <div className="min-h-screen bg-transparent flex flex-col selection:bg-durozen-500 selection:text-white">
       <Navbar />
 
       <main className="flex-grow">
         {/* Hero */}
-        <section className="py-16 sm:py-24 bg-gradient-to-b from-durozen-50/40 via-white to-white border-b border-slate-100 text-center">
+        <section className="py-16 sm:py-24 bg-white/30 backdrop-blur-xs border-b border-slate-200/60 text-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-durozen-50 border border-durozen-200/80 text-durozen-700 text-xs font-bold mb-4 shadow-2xs">
               <Sparkles className="w-3.5 h-3.5 text-durozen-500" />
@@ -44,7 +44,7 @@ export default function BookDemoPage() {
         </section>
 
         {/* Booking Workspace */}
-        <section className="py-16 sm:py-24 bg-slate-50/50">
+        <section className="py-16 sm:py-24 bg-white/40 backdrop-blur-xs">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
               {/* Left Column: What to expect in the demo */}

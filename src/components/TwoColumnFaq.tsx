@@ -59,7 +59,7 @@ export default function TwoColumnFaq() {
   const [openRight, setOpenRight] = useState<number | null>(0);
 
   return (
-    <section className="py-20 sm:py-28 bg-white relative">
+    <section className="py-20 sm:py-28 bg-transparent relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading (Screenshot 8) */}
         <div className="text-center max-w-2xl mx-auto mb-14">

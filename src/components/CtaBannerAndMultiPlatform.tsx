@@ -74,7 +74,7 @@ export default function CtaBannerAndMultiPlatform() {
       {/* ========================================================= */}
       {/* 2. MULTI-PLATFORM ACCESS CARDS (SCREENSHOT 9)             */}
       {/* ========================================================= */}
-      <section className="py-20 sm:py-28 bg-white relative">
+      <section className="py-20 sm:py-28 bg-transparent relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto mb-14">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">

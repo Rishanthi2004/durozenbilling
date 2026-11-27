@@ -50,8 +50,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-slate-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-900 relative min-h-screen`}
       >
+        {/* Fixed Ambient Design Background Pattern */}
+        <div
+          className="fixed inset-0 pointer-events-none -z-10 bg-cover bg-center bg-no-repeat bg-fixed opacity-95"
+          style={{ backgroundImage: "url('/background-design.jpg')" }}
+          aria-hidden="true"
+        />
         {children}
       </body>
     </html>

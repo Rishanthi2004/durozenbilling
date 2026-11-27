@@ -28,7 +28,7 @@ export default function HomePage() {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white flex flex-col selection:bg-durozen-500 selection:text-white relative">
+    <div className="min-h-screen bg-transparent flex flex-col selection:bg-durozen-500 selection:text-white relative">
       {/* 1. Top Announcement Bar (Screenshot 5) */}
       <TopAnnouncementBar />
 
@@ -49,7 +49,7 @@ export default function HomePage() {
         <LeadFutureFeatures />
 
         {/* 7. Interactive Live POS Workbench & Simulator */}
-        <section className="py-20 sm:py-28 bg-slate-50/70 border-y border-slate-200/80 relative">
+        <section className="py-20 sm:py-28 bg-white/40 backdrop-blur-xs border-y border-slate-200/60 relative">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-14">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-durozen-50 border border-durozen-200/80 text-durozen-700 text-xs font-bold mb-3 shadow-xs">
@@ -69,7 +69,7 @@ export default function HomePage() {
         </section>
 
         {/* 8. Products Showcase (Software That Works for Your Business) */}
-        <section id="products-showcase" className="py-20 bg-white relative">
+        <section id="products-showcase" className="py-20 bg-transparent relative">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-14">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-durozen-50 border border-durozen-200/80 text-durozen-700 text-xs font-bold mb-3 shadow-xs">
@@ -93,7 +93,7 @@ export default function HomePage() {
         </section>
 
         {/* 9. Verified Company Strengths Bar (35+, 10+, 3, 12+, 2+) */}
-        <section className="py-10 sm:py-12 bg-slate-50/50 border-y border-slate-200/80">
+        <section className="py-10 sm:py-12 bg-white/40 backdrop-blur-xs border-y border-slate-200/60">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-xl mx-auto mb-5">
               <span className="text-[10px] font-bold uppercase tracking-widest text-durozen-700">
@@ -120,7 +120,7 @@ export default function HomePage() {
         <CtaBannerAndMultiPlatform />
 
         {/* 14. Demo Request Form Section */}
-        <section id="demo-request-section" className="py-20 bg-slate-50/70 border-t border-slate-200/80 relative">
+        <section id="demo-request-section" className="py-20 bg-white/30 backdrop-blur-xs border-t border-slate-200/60 relative">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-1.5 durozen-brand-bar" />

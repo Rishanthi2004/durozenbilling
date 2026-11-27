@@ -58,7 +58,7 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
         {/* ========================================================= */}
         {/* 1. PRODUCT HERO HEADER                                    */}
         {/* ========================================================= */}
-        <section className="relative pt-12 pb-16 sm:pt-20 sm:pb-24 bg-gradient-to-b from-durozen-50/40 via-white to-white border-b border-slate-100 overflow-hidden">
+        <section className="relative pt-12 pb-16 sm:pt-20 sm:pb-24 bg-white/30 backdrop-blur-xs border-b border-slate-200/60 overflow-hidden">
           <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -133,7 +133,7 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
         {/* ========================================================= */}
         {/* 2. SOFTWARE INTERFACE GALLERY                             */}
         {/* ========================================================= */}
-        <section id="interface-gallery" className="py-20 sm:py-28 bg-white relative">
+        <section id="interface-gallery" className="py-20 sm:py-28 bg-transparent relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-14">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-durozen-50 border border-durozen-200/80 text-durozen-700 text-xs font-bold mb-3">
@@ -466,7 +466,7 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
         {/* ========================================================= */}
         {/* 3. STEP-BY-STEP WORKFLOW DEMONSTRATION                    */}
         {/* ========================================================= */}
-        <section className="py-20 sm:py-28 bg-slate-50/70 border-y border-slate-200/80 relative">
+        <section className="py-20 sm:py-28 bg-white/40 backdrop-blur-xs border-y border-slate-200/60 relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-durozen-50 border border-durozen-200/80 text-durozen-700 text-xs font-bold mb-3">
@@ -561,7 +561,7 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
         {/* ========================================================= */}
         {/* 4. SUPPORTED BUSINESS TYPES                               */}
         {/* ========================================================= */}
-        <section className="py-20 sm:py-28 bg-white relative">
+        <section className="py-20 sm:py-28 bg-transparent relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-14">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-durozen-50 border border-durozen-200/80 text-durozen-700 text-xs font-bold mb-3">
@@ -644,7 +644,7 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
         {/* ========================================================= */}
         {/* 6. TECHNICAL HARDWARE & SYSTEM SPECS                      */}
         {/* ========================================================= */}
-        <section className="py-16 bg-white border-b border-slate-100">
+        <section className="py-16 bg-transparent border-b border-slate-200/60">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200">
               <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
@@ -666,7 +666,7 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
         {/* ========================================================= */}
         {/* 7. FREQUENTLY ASKED QUESTIONS                             */}
         {/* ========================================================= */}
-        <section className="py-20 sm:py-28 bg-white relative">
+        <section className="py-20 sm:py-28 bg-transparent relative">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-14">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-durozen-50 border border-durozen-200/80 text-durozen-700 text-xs font-bold mb-3">
@@ -716,7 +716,7 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
         {/* ========================================================= */}
         {/* 8. REQUEST A DEMO CTA                                     */}
         {/* ========================================================= */}
-        <section className="py-20 bg-slate-50/80 border-t border-slate-200/80">
+        <section className="py-20 bg-white/40 backdrop-blur-xs border-t border-slate-200/60">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl">
               <div className="text-center max-w-xl mx-auto mb-8">

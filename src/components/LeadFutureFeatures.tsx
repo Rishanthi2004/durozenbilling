@@ -51,7 +51,7 @@ const FEATURES_LIST = [
 
 export default function LeadFutureFeatures() {
   return (
-    <section className="py-20 sm:py-28 bg-white relative">
+    <section className="py-20 sm:py-28 bg-transparent relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading (Screenshot 2) */}
         <div className="text-left max-w-3xl mb-14">

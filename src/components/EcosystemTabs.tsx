@@ -95,7 +95,7 @@ export default function EcosystemTabs() {
   const activeTab = ECOSYSTEM_TABS.find((t) => t.id === activeTabId) || ECOSYSTEM_TABS[0];
 
   return (
-    <section className="py-20 bg-white relative">
+    <section className="py-20 bg-transparent relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading (Screenshot 1 & 3) */}
         <div className="text-center max-w-3xl mx-auto mb-12">

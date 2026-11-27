@@ -106,9 +106,7 @@ export default function HeroRaseedStyle() {
 
   return (
     <>
-      <section className="relative pt-6 pb-16 sm:pt-10 sm:pb-24 overflow-hidden bg-white">
-        {/* Soft contour line background (matching Screenshot 5/7) */}
-        <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
+      <section className="relative pt-6 pb-16 sm:pt-10 sm:pb-24 overflow-hidden bg-transparent">
 
         {/* Floating Kinetic Moving Word Badges Orbiting the Hero */}
         <motion.div

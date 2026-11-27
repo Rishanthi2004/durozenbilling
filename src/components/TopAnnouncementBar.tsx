@@ -9,7 +9,7 @@ export default function TopAnnouncementBar() {
     <div className="w-full">
       {/* 4-Color Brand Ribbon matching Durozen Logo (Red, Yellow, Green, Blue) */}
       <div className="h-1 w-full durozen-brand-bar" />
-      <div className="bg-slate-50 border-b border-slate-200/80 py-1.5 px-4 text-xs text-slate-600 hidden md:block">
+      <div className="bg-white/85 backdrop-blur-md border-b border-slate-200/60 py-1.5 px-4 text-xs text-slate-600 hidden md:block">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-base leading-none">⚡</span>
